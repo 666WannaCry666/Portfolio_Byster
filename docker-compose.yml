@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  web:
+    image: registry.byster.ru/byster/website:master
+    expose:
+      - 80
+    env_file:
+      - .env
