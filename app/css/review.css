@@ -134,3 +134,9 @@
   display: none;
   margin-top: 20px!important;
 }
+
+@media (max-width: 1000px ){
+  .review-item {
+    width: 100%;
+  }
+}
