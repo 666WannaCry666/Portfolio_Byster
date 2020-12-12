@@ -17,7 +17,7 @@ function dateParse(msec) {
 }
 
 function renderReviews(data) {
-  $('#reviewInner').empty();
+  // $('#reviewInner').empty();
 
   $.each(data, function (index, elem) {
     let img = '';
@@ -56,8 +56,8 @@ function renderReviews(data) {
   });
 }
 
-function dataLoad(limit) {
-  $.get(`https://api.byster.ru/site/comments?offset=0&limit=${limit}`, function (response) {
+function dataLoad(offset, limit) {
+  $.get(`https://api.byster.ru/site/comments?offset=${offset}&limit=${limit}`, function (response) {
     renderReviews(response)
   })
 }
@@ -85,15 +85,16 @@ $(document).ready(function () {
     ]
   });
 
-  let limit = 5;
-  dataLoad(limit);
+  const limit = 10;
+  let offset = 0;
+  dataLoad(offset, limit);
 
   $(window).on("scroll", function () {
     const scrollHeight = $(document).height();
     const scrollPosition = $(window).height() + $(window).scrollTop();
     if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-      limit += 5;
-      dataLoad(limit);
+      offset += 10;
+      dataLoad(offset, limit);
     }
   });
 
