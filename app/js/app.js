@@ -96,4 +96,9 @@ $(document).ready(function () {
       dataLoad(limit);
     }
   });
+
+  $('#reviewLink').on('click', function (e) {
+    $('html,body').stop().animate({scrollTop: $('#reviewSection').offset().top - 50}, 1000);
+    e.preventDefault();
+  });
 });
