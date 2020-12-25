@@ -1,3 +1,14 @@
+const videoList = [
+  'cNTo-vSwTss',
+  'pXzISdEzriM',
+  'woRRJaVdn0c',
+  '6pf2yCMRJDk',
+  'JXbQaxOAk2E'
+];
+
+// Объекты YT, чтобы можно было ставить на паузу видео
+let objectsYT = [];
+
 function roundNumber(number) {
   // округление значений, меньших 10
 
@@ -17,8 +28,6 @@ function dateParse(msec) {
 }
 
 function renderReviews(data) {
-  // $('#reviewInner').empty();
-
   $.each(data, function (index, elem) {
     let img = '';
     let href = '';
@@ -62,6 +71,25 @@ function dataLoad(offset, limit) {
   })
 }
 
+function renderVideoContainers(videoList) {
+  $.each(videoList, function (index, elem) {
+
+    const video = $(`
+      <div>
+        <div class="video__slider-item">
+          <div id=${elem}></div>
+        </div>
+      </div>
+    `);
+
+    let a = `<iframe src="https://www.youtube.com/embed/${elem}" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>`
+
+    $('#video').append(video);
+  });
+}
+
 $(document).ready(function () {
   const headerNav = $('#headerNav');
 
@@ -73,18 +101,10 @@ $(document).ready(function () {
     headerNav.slideUp('fast');
   });
 
-  $('#video').slick({
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 700,
-        settings: {
-          arrows: false,
-        }
-      },
-    ]
-  });
+  // Рендер контейнеров для видео
+  renderVideoContainers(videoList);
 
+  // Загрузка отзывов
   const limit = 10;
   let offset = 0;
   dataLoad(offset, limit);
@@ -103,3 +123,40 @@ $(document).ready(function () {
     e.preventDefault();
   });
 });
+
+function onPlayerReady(eventPlayer) {
+
+  $('#video').on('afterChange', function (event, slick, nextSlide) {
+    if (eventPlayer.target.getPlayerState() === 1) {
+      eventPlayer.target.pauseVideo();
+    }
+  });
+}
+
+// Video
+function onYouTubeIframeAPIReady() {
+
+  $.each(videoList, function (index, elem) {
+    const objectYT = new YT.Player(elem, {
+      videoId: elem,
+      events: {
+        'onReady': onPlayerReady,
+      }
+    });
+
+    objectsYT.push(objectYT)
+  });
+
+  $('#video').slick({
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          arrows: false,
+        }
+      },
+    ]
+  });
+
+}
