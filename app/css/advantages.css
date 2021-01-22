@@ -50,3 +50,9 @@
     margin-top: 70px;
   }
 }
+
+@media (max-width: 576px) {
+  .advantages {
+    margin-top: 100px;
+  }
+}

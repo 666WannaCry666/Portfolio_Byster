@@ -154,6 +154,7 @@ function onYouTubeIframeAPIReady() {
         breakpoint: 700,
         settings: {
           arrows: false,
+          dots: true,
         }
       },
     ]
