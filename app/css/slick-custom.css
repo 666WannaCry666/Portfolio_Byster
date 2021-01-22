@@ -33,4 +33,19 @@
   opacity: .4;
 }
 
+.slick-dots li button::before {
+  background: white;
+  color: #fff0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 
+.slick-dots li:not(.slick-active) button:hover::before {
+  opacity: .25;
+}
+
+.slick-dots li.slick-active button::before {
+  background: #eb2e7d;
+  color: #fff0;
+}

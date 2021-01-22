@@ -58,13 +58,13 @@
   }
   
   .video {
-  margin-top: 40px;
-}
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 576px) {
   .video__slider-item {
-    max-width: 500px;
-    height: 281px;
+    width: 290px;
+    height: 163px;
   }
 }
