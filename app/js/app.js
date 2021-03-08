@@ -137,6 +137,7 @@ function onPlayerReady(eventPlayer) {
 function onYouTubeIframeAPIReady() {
 
   $.each(videoList, function (index, elem) {
+    // на каждый объект iframe создаем objectYT
     const objectYT = new YT.Player(elem, {
       videoId: elem,
       events: {
