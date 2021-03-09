@@ -17,23 +17,39 @@
   width: 1280px;
   height: 720px;
   margin: 0 auto;
-  background: #56525266;
+  /*background: #56525266;*/
   /*z-index: 2;*/
 }
 
 .video__slider-item::before {
-  content: 'Видео загружается...';
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+  /*content: 'Видео загружается...';*/
+  /*color: #fff;*/
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  /*z-index: -1;*/
 }
 
 .video__slider-item iframe {
   width: 100%;
   height: 100%;
+}
+
+.video-preview {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-preview__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: auto;
 }
 
 @media (max-width: 1600px) {
