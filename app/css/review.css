@@ -140,3 +140,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .review-item::before {
+    width: 300px;
+  }
+}
