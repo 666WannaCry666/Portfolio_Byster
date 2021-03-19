@@ -1,5 +1,5 @@
 .review {
-  margin: 0 auto;
+  margin: 100px auto 0;
   background: #070a11;
 }
 
@@ -138,5 +138,11 @@
 @media (max-width: 1000px ){
   .review-item {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .review-item::before {
+    width: 300px;
   }
 }

@@ -13,7 +13,7 @@
 }
 
 .advantages__row--second {
-  margin-top: 295px;
+  margin-top: 100px;
 }
 
 .advantages__item {
@@ -25,18 +25,20 @@
 
 .advantages__name {
   color: #fcbc2c;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 .advantages__text {
   text-align: center;
   text-shadow: #2B2A2C 2px 3px 3px;
+  margin-top: 10px;
+  line-height: 20px;
 }
 
 .advantages__photo {
-  width: 200px;
-  margin-top: 25px;
+  width: 160px;
+  margin-top: 10px;
 }
 
 @media (max-width: 1100px) {

@@ -74,19 +74,17 @@ function dataLoad(offset, limit) {
 function renderVideoContainers(videoList) {
   $.each(videoList, function (index, elem) {
 
-    const video = $(`
+    const videoElement = $(`
       <div>
         <div class="video__slider-item">
-          <div id=${elem}></div>
+          <div id=${elem} class="video-preview" style="background-image: url(//img.youtube.com/vi/${elem}/maxresdefault.jpg);" >
+            <img class="video-preview__btn" src="image/youtube-play-icon.svg">
+          </div>
         </div>
       </div>
     `);
 
-    let a = `<iframe src="https://www.youtube.com/embed/${elem}" frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>`
-
-    $('#video').append(video);
+    $('#video').append(videoElement);
   });
 }
 
@@ -125,7 +123,6 @@ $(document).ready(function () {
 });
 
 function onPlayerReady(eventPlayer) {
-
   $('#video').on('afterChange', function (event, slick, nextSlide) {
     if (eventPlayer.target.getPlayerState() === 1) {
       eventPlayer.target.pauseVideo();
@@ -136,16 +133,17 @@ function onPlayerReady(eventPlayer) {
 // Video
 function onYouTubeIframeAPIReady() {
 
-  $.each(videoList, function (index, elem) {
-    const objectYT = new YT.Player(elem, {
-      videoId: elem,
+  $('.video-preview').click(function () {
+    // при клике на картинку добавляем объект iframe
+    const objectYT = new YT.Player(this.id, {
+      videoId: this.id,
       events: {
         'onReady': onPlayerReady,
       }
     });
 
     objectsYT.push(objectYT)
-  });
+  })
 
   $('#video').slick({
     dots: false,
