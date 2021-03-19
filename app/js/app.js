@@ -77,7 +77,7 @@ function renderVideoContainers(videoList) {
     const videoElement = $(`
       <div>
         <div class="video__slider-item">
-          <div id=${elem} class="video-preview" style="background-image: url(//img.youtube.com/vi/${elem}/maxresdefault.png);" >
+          <div id=${elem} class="video-preview" style="background-image: url(//img.youtube.com/vi/${elem}/maxresdefault.jpg);" >
             <img class="video-preview__btn" src="image/youtube-play-icon.svg">
           </div>
         </div>
