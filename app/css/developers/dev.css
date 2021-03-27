@@ -1,3 +1,8 @@
 @import "first.css";
 @import "what-can.css";
 @import "last.css";
+
+.dev-main {
+  /*background: #12141a url("../../image/dev/dev-main.png") no-repeat  center/cover;*/
+  background: #12141a;
+}

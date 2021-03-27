@@ -78,7 +78,7 @@ function renderVideoContainers(videoList) {
       <div>
         <div class="video__slider-item">
           <div id=${elem} class="video-preview" style="background-image: url(//img.youtube.com/vi/${elem}/maxresdefault.jpg);" >
-            <img class="video-preview__btn" src="image/youtube-play-icon.svg">
+            <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
           </div>
         </div>
       </div>
@@ -99,11 +99,29 @@ $(document).ready(function () {
     headerNav.slideUp('fast');
   });
 
+  $('#what-can__slider').slick({
+    dots: true,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: '40px',
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          arrows: false,
+          dots: true,
+        }
+      },
+    ]
+  });
+
   // Рендер контейнеров для видео
   renderVideoContainers(videoList);
 
-  // Загрузка отзывов
-  const limit = 10;
+  // Загрузка отзывов (раскомментить, когда будут нужны отзывы)
+
+  /*const limit = 10;
   let offset = 0;
   dataLoad(offset, limit);
 
@@ -119,7 +137,8 @@ $(document).ready(function () {
   $('#reviewLink').on('click', function (e) {
     $('html,body').stop().animate({scrollTop: $('#reviewSection').offset().top - 50}, 1000);
     e.preventDefault();
-  });
+  });*/
+
 });
 
 function onPlayerReady(eventPlayer) {

@@ -1,3 +1,42 @@
+.dev-first-top {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+}
+
 .intro-title__dev {
   color: #fff;
+  font-size: 59px;
+  font-family: Roboto, sans-serif;
 }
+
+.dev-title-btn {
+  margin: 0 0 0 165px;
+}
+
+.dev-first-bottom {
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dev-first-bottom__elem {
+  max-width: 400px;
+}
+
+.dev-first-bottom__title {
+  font-size: 43px;
+  color: #fcbc2c;
+}
+
+.dev-first-bottom__text {
+  font-size: 21px;
+  margin-top: 35px;
+}
+
+.dev-section-2 {
+  margin-top: 200px;
+  position: relative;
+}
+
+

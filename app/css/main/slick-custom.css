@@ -17,14 +17,14 @@
 .slick-prev,
 .slick-prev:hover,
 .slick-prev:focus {
-  background-image: url("../image/arrow-left.png");
+  background-image: url("../../image/main/arrow-left.png");
   left: 42px;
 }
 
 .slick-next,
 .slick-next:hover,
 .slick-next:focus {
-  background-image: url("../image/arrow-right.png");
+  background-image: url("../../image/main/arrow-right.png");
   right: 42px;
 }
 
@@ -49,3 +49,56 @@
   background: #eb2e7d;
   color: #fff0;
 }
+
+/* Dev slider */
+
+.what-can__slider .slick-next,
+.what-can__slider .slick-prev {
+  width: 55px;
+  height: 55px;
+  background: #68696d no-repeat center/40px;
+  border-radius: 50%;
+  transform: none;
+  top: auto;
+  bottom: -90px;
+}
+
+.what-can__slider .slick-prev {
+  background-image: url("../../image/dev/slider/chevron-l.svg");
+  background-position: 6px;
+  left: 32%;
+}
+
+.what-can__slider .slick-next {
+  background-image: url("../../image/dev/slider/chevron-r.svg");
+  background-position: 11px;
+  right: 32%;
+}
+
+.what-can__slider .slick-dots {
+  bottom: -75px;
+}
+
+.what-can__slider .slick-dots li {
+  width: 30px;
+  height: 30px;
+}
+
+.what-can__slider .slick-dots li button::before {
+  background: #fff0;
+  border: 2px solid #fff;
+  width: 30px;
+  height: 30px;
+}
+
+.what-can__slider .slick-dots li:hover:not(.slick-active) button::before {
+  opacity: 1;
+}
+
+.what-can__slider .slick-dots li.slick-active button::before {
+  background: #fbb531;
+  border-color: #fbb531;
+  box-shadow: 0 0 0 2px #fbb531;
+}
+
+

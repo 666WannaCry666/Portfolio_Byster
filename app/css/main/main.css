@@ -25,19 +25,19 @@ p {
 
 @font-face {
   font-family: 'Myriad Pro Regular';
-  src: url('../fonts/MyriadPro-Regular.eot');
-  src: url('../fonts/MyriadPro-Regular.eot') format('embedded-opentype'),
-  url('../fonts/MyriadPro-Regular.woff') format('woff'),
-  url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+  src: url('../../fonts/MyriadPro-Regular.eot');
+  src: url('../../fonts/MyriadPro-Regular.eot') format('embedded-opentype'),
+  url('../../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../../fonts/MyriadPro-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Buster';
-  src: url('../fonts/Byster.ttf') format('truetype'),
-  url('../fonts/Byster.woff') format('woff'),
-  url('../fonts/Byster.woff2') format('woff2');
+  src: url('../../fonts/Byster.ttf') format('truetype'),
+  url('../../fonts/Byster.woff') format('woff'),
+  url('../../fonts/Byster.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -45,9 +45,9 @@ p {
 @font-face {
   font-family: 'Yandex Sans';
   src: local('Yandex Sans Display Regular'), local('Yandex-Sans-Display-Regular'),
-  url('../fonts/YandexSansDisplay-Regular.ttf') format('truetype'),
-  url('../fonts/YandexSansDisplay-Regular.woff') format('woff'),
-  url('../fonts/YandexSansDisplay-Regular.woff2') format('woff2');
+  url('../../fonts/YandexSansDisplay-Regular.ttf') format('truetype'),
+  url('../../fonts/YandexSansDisplay-Regular.woff') format('woff'),
+  url('../../fonts/YandexSansDisplay-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
@@ -71,10 +71,10 @@ p {
 }
 
 .main-top {
-  background-image: url(../image/bg-top.png);
+  background-image: url(../../image/main/bg-top.png);
 }
 
 .main-bottom {
-  background-image: url(../image/bg-bottom.png);
+  background-image: url(../../image/main/bg-bottom.png);
   height: 300px;
 }
