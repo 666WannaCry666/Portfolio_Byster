@@ -107,10 +107,10 @@ $(document).ready(function () {
     centerPadding: '40px',
     responsive: [
       {
-        breakpoint: 700,
+        breakpoint: 1000,
         settings: {
           arrows: false,
-          dots: true,
+          dots: false,
         }
       },
     ]
