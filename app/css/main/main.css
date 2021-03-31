@@ -1,0 +1,80 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #fff;
+  background-color: #070a11;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('../../fonts/MyriadPro-Regular.eot');
+  src: url('../../fonts/MyriadPro-Regular.eot') format('embedded-opentype'),
+  url('../../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../../fonts/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Buster';
+  src: url('../../fonts/Byster.ttf') format('truetype'),
+  url('../../fonts/Byster.woff') format('woff'),
+  url('../../fonts/Byster.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yandex Sans';
+  src: local('Yandex Sans Display Regular'), local('Yandex-Sans-Display-Regular'),
+  url('../../fonts/YandexSansDisplay-Regular.ttf') format('truetype'),
+  url('../../fonts/YandexSansDisplay-Regular.woff') format('woff'),
+  url('../../fonts/YandexSansDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+.main-top,
+.main-bottom {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-top {
+  background-image: url(../../image/main/bg-top.png);
+}
+
+.main-bottom {
+  background-image: url(../../image/main/bg-bottom.png);
+  height: 300px;
+}

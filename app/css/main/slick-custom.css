@@ -1,0 +1,123 @@
+.slick-prev:before, .slick-next:before {
+  content: none;
+}
+
+.slick-slide {
+  outline: none
+}
+
+.slick-prev,
+.slick-next {
+  background: no-repeat center/100%;
+  width: 34px;
+  height: 39px;
+  z-index: 10;
+}
+
+.slick-prev,
+.slick-prev:hover,
+.slick-prev:focus {
+  background-image: url("../../image/main/arrow-left.png");
+  left: 42px;
+}
+
+.slick-next,
+.slick-next:hover,
+.slick-next:focus {
+  background-image: url("../../image/main/arrow-right.png");
+  right: 42px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: .4;
+}
+
+.slick-dots li button::before {
+  background: white;
+  color: #fff0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.slick-dots li:not(.slick-active) button:hover::before {
+  opacity: .25;
+}
+
+.slick-dots li.slick-active button::before {
+  background: #eb2e7d;
+  color: #fff0;
+}
+
+/* Dev slider */
+
+.what-can__slider .slick-next,
+.what-can__slider .slick-prev {
+  width: 55px;
+  height: 55px;
+  background: #68696d no-repeat center/40px;
+  border-radius: 50%;
+  transform: none;
+  top: auto;
+  bottom: -90px;
+}
+
+.what-can__slider .slick-prev {
+  background-image: url("../../image/dev/slider/chevron-l.svg");
+  background-position: 6px;
+  left: calc(100% - 1300px);
+}
+
+.what-can__slider .slick-next {
+  background-image: url("../../image/dev/slider/chevron-r.svg");
+  background-position: 11px;
+  right: calc(100% - 1300px);
+}
+
+.what-can__slider .slick-dots {
+  bottom: -78px;
+}
+
+.what-can__slider .slick-dots li {
+  width: 30px;
+  height: 30px;
+}
+
+.what-can__slider .slick-dots li button::before {
+  background: #fff0;
+  border: 2px solid #fff;
+  width: 30px;
+  height: 30px;
+}
+
+.what-can__slider .slick-dots li:hover:not(.slick-active) button::before {
+  opacity: 1;
+}
+
+.what-can__slider .slick-dots li.slick-active button::before {
+  background: #fbb531;
+  border-color: #fbb531;
+  box-shadow: 0 0 0 2px #fbb531;
+}
+
+@media (max-width: 1600px) {
+  .what-can__slider .slick-prev {
+    left: calc(100% - 1150px);
+  }
+  
+  .what-can__slider .slick-next {
+    right: calc(100% - 1150px);
+  }
+}
+
+@media (max-width: 1250px) {
+  .what-can__slider .slick-prev {
+    left: calc(100% - 950px);
+  }
+  
+  .what-can__slider .slick-next {
+    right: calc(100% - 950px);
+  }
+}
+
