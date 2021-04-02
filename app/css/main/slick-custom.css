@@ -66,13 +66,13 @@
 .what-can__slider .slick-prev {
   background-image: url("../../image/dev/slider/chevron-l.svg");
   background-position: 6px;
-  left: calc(100% - 1300px);
+  left: 34%;
 }
 
 .what-can__slider .slick-next {
   background-image: url("../../image/dev/slider/chevron-r.svg");
   background-position: 11px;
-  right: calc(100% - 1300px);
+  right: 34%;
 }
 
 .what-can__slider .slick-dots {
@@ -99,6 +99,16 @@
   background: #fbb531;
   border-color: #fbb531;
   box-shadow: 0 0 0 2px #fbb531;
+}
+
+@media (max-width: 1920px) {
+  .what-can__slider .slick-prev {
+    left: calc(100% - 1300px);
+  }
+  
+  .what-can__slider .slick-next {
+    right: calc(100% - 1300px);
+  }
 }
 
 @media (max-width: 1600px) {
