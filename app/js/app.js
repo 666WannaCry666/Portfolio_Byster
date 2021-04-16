@@ -56,7 +56,7 @@ function renderReviews(data) {
           <div class="review-item__name">${elem.author}</div>
           ${img}
         </div>
-        <div class="review-item__date">${dateParse(elem.date * 1000)}</div>
+        <div class="review-item__date">${dateParse(elem.review_date * 1000)}</div>
         <div class="review-item__text">${elem.text}</div>
       </a>
     `);
