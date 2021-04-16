@@ -37,7 +37,7 @@ function renderReviews(data) {
         img = '<div class="review-item__img review-item__img--buster">Byster</div>';
         break;
       }
-      case 'vk': {
+      case 'VK': {
         href = `href="${elem.url}" target="_blank"`;
         img = `<img src="./image/logo-${elem.source}.svg" alt="" class="review-item__img review-item__img--vk">`;
         break;
