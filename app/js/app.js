@@ -121,7 +121,7 @@ $(document).ready(function () {
 
   // Загрузка отзывов (раскомментить, когда будут нужны отзывы)
 
-  /*const limit = 10;
+  const limit = 10;
   let offset = 0;
   dataLoad(offset, limit);
 
@@ -137,7 +137,7 @@ $(document).ready(function () {
   $('#reviewLink').on('click', function (e) {
     $('html,body').stop().animate({scrollTop: $('#reviewSection').offset().top - 50}, 1000);
     e.preventDefault();
-  });*/
+  });
 
 });
 
