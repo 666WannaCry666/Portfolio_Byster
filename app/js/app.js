@@ -39,13 +39,13 @@ function renderReviews(data) {
       }
       case 'VK': {
         href = `href="${elem.url}" target="_blank"`;
-        img = `<img src="./image/logo-${elem.source}.svg" alt="" class="review-item__img review-item__img--vk">`;
+        img = `<img src="./image/logo-vk.svg" alt="" class="review-item__img review-item__img--vk">`;
         break;
       }
       // funpay
       default: {
         href = `href="${elem.url}" target="_blank"`;
-        img = `<img src="./image/logo-${elem.source}.svg" alt="" class="review-item__img">`;
+        img = `<img src="./image/logo-funpay.svg" alt="" class="review-item__img">`;
         break;
       }
     }
