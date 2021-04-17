@@ -3,6 +3,7 @@ version: '3.7'
 services:
   web:
     image: registry.byster.ru/byster/website:master
+    restart: always
     expose:
       - 80
     env_file:
