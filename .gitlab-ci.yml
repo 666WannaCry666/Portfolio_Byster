@@ -21,8 +21,9 @@ deploy-prod:
     DEPLOY_DOCKER_COMPOSE_EXTRA_ARGS: --remove-orphans --no-deps
     DOT_ENV_PATH: $VHOST_PATH/.env
     DOT_ENV: |
-      VIRTUAL_HOST=web.byster.ru
-      LETSENCRYPT_HOST=web.byster.ru
+      VIRTUAL_HOST=byster.ru
+      VIRTUAL_PATH=/
+      LETSENCRYPT_HOST=byster.ru
       LETSENCRYPT_EMAIL=admin@byster.ru
   only:
     - master

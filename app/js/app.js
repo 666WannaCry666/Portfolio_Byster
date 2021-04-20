@@ -37,15 +37,15 @@ function renderReviews(data) {
         img = '<div class="review-item__img review-item__img--buster">Byster</div>';
         break;
       }
-      case 'vk': {
+      case 'VK': {
         href = `href="${elem.url}" target="_blank"`;
-        img = `<img src="./image/logo-${elem.source}.svg" alt="" class="review-item__img review-item__img--vk">`;
+        img = `<img src="./image/main/logo-vk.svg" alt="" class="review-item__img review-item__img--vk">`;
         break;
       }
       // funpay
       default: {
         href = `href="${elem.url}" target="_blank"`;
-        img = `<img src="./image/logo-${elem.source}.svg" alt="" class="review-item__img">`;
+        img = `<img src="./image/main/logo-funpay.svg" alt="" class="review-item__img">`;
         break;
       }
     }
@@ -56,7 +56,7 @@ function renderReviews(data) {
           <div class="review-item__name">${elem.author}</div>
           ${img}
         </div>
-        <div class="review-item__date">${dateParse(elem.date * 1000)}</div>
+        <div class="review-item__date">${dateParse(elem.review_date * 1000)}</div>
         <div class="review-item__text">${elem.text}</div>
       </a>
     `);
@@ -121,7 +121,7 @@ $(document).ready(function () {
 
   // Загрузка отзывов (раскомментить, когда будут нужны отзывы)
 
-  /*const limit = 10;
+  const limit = 10;
   let offset = 0;
   dataLoad(offset, limit);
 
@@ -137,7 +137,7 @@ $(document).ready(function () {
   $('#reviewLink').on('click', function (e) {
     $('html,body').stop().animate({scrollTop: $('#reviewSection').offset().top - 50}, 1000);
     e.preventDefault();
-  });*/
+  });
 
 });
 
