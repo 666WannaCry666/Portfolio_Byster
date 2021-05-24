@@ -53,6 +53,18 @@
   width: 100%;
 }
 
+@media (max-width: 1255px) {
+  .intro__image {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .intro__image {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .intro__inner {
     flex-direction: column;
@@ -62,10 +74,11 @@
   .intro__content {
     max-width: none;
   }
-  
-  .intro__image {
-    width: auto;
-    margin: 0;
+}
+
+@media (max-width: 900px) {
+  .intro__content {
+    text-align: center;
   }
 }
 
