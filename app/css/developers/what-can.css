@@ -116,6 +116,14 @@
   .what-can__title {
     font-size: 30px;
   }
+
+  .slider-elem__content {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 310px;
+    display: flex;
+  }
   
   .slider-elem__title {
     font-size: 22px;
@@ -124,6 +132,10 @@
   .slider-elem__text {
     letter-spacing: normal;
     font-size: 16px;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+    flex: auto;
   }
   
   .what-can__slider-elem {
@@ -132,7 +144,7 @@
   }
   
   .slider-elem__img {
-    width: 25px;
+    width: 30%;
   }
 }
 
