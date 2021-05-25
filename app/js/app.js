@@ -93,6 +93,7 @@ $(document).ready(function () {
 
   $('#btnMenu').click(function () {
     headerNav.slideDown('fast');
+    headerNav.css("display", "flex")
   });
 
   $('#btnMenuClose').click(function () {
