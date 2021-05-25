@@ -37,7 +37,7 @@
 }
 
 .header-nav__link:hover::before {
-  width: 100vw;
+  width: 100%;
 }
 
 .header__logo {
@@ -136,6 +136,10 @@
   
   .header-nav__link {
     margin-top: 8px;
+  }
+
+  .header-nav__link:hover::before {
+    width: 100vw;
   }
   
   .header__inner {
