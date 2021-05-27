@@ -1,8 +1,8 @@
 .dev-first-top {
   margin-top: 130px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   max-width: 1300px;
 }
 
@@ -10,10 +10,6 @@
   color: #fff;
   font-size: 59px;
   font-family: Roboto, sans-serif;
-}
-
-.dev-title-btn {
-  margin: 0 0 0 165px;
 }
 
 .dev-first-bottom {
