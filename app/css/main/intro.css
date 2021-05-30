@@ -1,14 +1,15 @@
 .intro {
-  margin-top: 70px;
+  margin-top: 138px;
 }
 
 .intro__inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .intro__content {
-  max-width: 700px;
+  max-width: 50%;
 }
 
 .intro__title {

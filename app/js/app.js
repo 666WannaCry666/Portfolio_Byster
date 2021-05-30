@@ -21,7 +21,7 @@ function roundNumber(number) {
 function dateParse(msec) {
   const date = new Date(msec);
   const year = date.getFullYear();
-  const month = roundNumber(date.getMonth());
+  const month = roundNumber(date.getMonth() + 1);
   const day = roundNumber(date.getDate());
 
   return `${day}.${month}.${year}`
