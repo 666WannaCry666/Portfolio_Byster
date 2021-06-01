@@ -19,7 +19,7 @@
 }
 
 .dev-first-bottom__elem {
-  max-width: 400px;
+  max-width: 320px;
 }
 
 .dev-first-bottom__title {
@@ -42,11 +42,7 @@
   padding-bottom: 200px;
 }
 
-@media (max-width: 1600px) {
-  .dev-first-bottom__elem {
-    max-width: 320px;
-  }
-}
+
 
 @media (max-width: 1250px) {
   .dev-first-top {
