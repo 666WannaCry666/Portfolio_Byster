@@ -15,20 +15,46 @@
 .subscribe-item {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 10px;
   padding: 30px 50px 55px;
-  background-image: linear-gradient(to bottom, #1b1e25, #050910);
-  border: 1px solid #3a2d44;
+  border: 2px solid transparent;
   min-width: 328px;
   min-height: 558px;
   transition: all .3s;
+  background: #000;
+  background-clip: padding-box;
 }
 
-.subscribe-item--second {
-  min-width: 380px;
-  min-height: 680px;
-  padding-top: 40px;
+.subscribe-item--first:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit; 
+  background: linear-gradient(100deg, rgba(231,60,43,1) 49%, rgba(255,197,191,1) 52%, rgba(231,60,43,1) 55%);
+}
+
+.subscribe-item--second:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin: -2px; 
+  border-radius: inherit; 
+  background: linear-gradient(100deg, rgba(241,180,91,1) 49%, rgba(255,255,255,1) 52%, rgba(241,180,91,1) 55%);
+}
+
+.subscribe-item--third:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin: -2px; 
+  border-radius: inherit; 
+  background: linear-gradient(100deg, rgba(69,143,185,1) 29%, rgba(204,255,199,1) 52%, rgba(58,180,99,1) 75%);
 }
 
 .subscribe-item--first:hover {
