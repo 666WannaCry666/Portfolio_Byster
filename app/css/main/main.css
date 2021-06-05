@@ -64,17 +64,16 @@ p {
   }
 }
 
-.main-top,
-.main-bottom {
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (min-width: 1900px) {
+  .main-top,
+  .main-bottom {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .container {
+    margin: 0 343px;
+  }
 }
 
-.main-top {
-  background-image: url(../../image/main/bg-top.png);
-}
-
-.main-bottom {
-  background-image: url(../../image/main/bg-bottom.png);
-  height: 300px;
-}

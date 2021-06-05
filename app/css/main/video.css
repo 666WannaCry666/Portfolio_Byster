@@ -18,7 +18,7 @@
 
 .video__slider-item {
   position: relative;
-  width: 1280px;
+  max-width: 1280px;
   height: 720px;
   margin: 0 auto;
   border: 5px solid #28202f;
@@ -46,6 +46,14 @@
   width: 100px;
   height: auto;
 }
+
+@media (min-width: 1601px) {
+  .video__slider-item {
+    max-width: 1024px;
+    height: 600px;
+  }
+}
+
 
 @media (max-width: 1600px) {
   .video__slider-item {
