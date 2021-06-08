@@ -4,7 +4,7 @@ html {
 
 body {
   color: #fff;
-  background-color: #131419;
+  background-color: #070c15;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -53,27 +53,35 @@ p {
 }
 
 .container {
-  max-width: 1540px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+.review {
+  background-color: #070c15;
+}
+
+.main-top {
+  background-image: url('../../image/main/1-2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0 auto;
+}
+
 @media (max-width: 1600px) {
   .container {
-    max-width: 1240px;
+    max-width: 1040px;
+  }
+
+  .main-top {
+    background-size: 100%;
   }
 }
 
-@media (min-width: 1900px) {
-  .main-top,
-  .main-bottom {
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-  }
-
-  .container {
-    margin: 0 343px;
+@media (max-width: 1330px) {
+  .main-top {
+    background: #070c15;
   }
 }
-
