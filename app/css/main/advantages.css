@@ -14,9 +14,6 @@
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  background-image: url('../../image/main/advantages_item_background.png');
-  background-size: 110% 110%;
-  background-position: center center;
 }
 
 .advantages__item {
@@ -25,6 +22,10 @@
   align-items: center;
   max-width: 300px;
   position: relative;
+  background-image: url('../../image/main/advantages_item_background_2.png');
+  background-position: left top;
+  background-size: 100% 100%;
+  background: radial-gradient(closest-side, rgba(41,17,56,1) 28%, rgba(7,12,21,1) 91%, rgba(7,12,21,1) 75%);
 }
 
 .advantages__item:not(:nth-child(-n + 3)) {
