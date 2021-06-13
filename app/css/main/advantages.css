@@ -72,6 +72,7 @@
 
   .advantages__inner {
     justify-content: space-around;
+    background: transparent;
   }
 
   .advantages__item:not(:nth-child(2)) {
