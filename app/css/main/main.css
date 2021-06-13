@@ -63,7 +63,7 @@ p {
 }
 
 .main-top {
-  background-image: url('../../image/main/1-2.png');
+  background-image: url('../../image/main/intro_background.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@ p {
   }
 
   .main-top {
-    background-size: cover;
+    background-size: 100vw 100vh;
   }
 }
 
