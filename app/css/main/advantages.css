@@ -1,9 +1,9 @@
 .advantages {
   padding-top: 330px;
   padding-bottom: 175px;
-  background-image: url('../../image/main/advantages_background.png');
-  background-size: cover;
-  background-position: center center;
+  background-image: url('../../image/main/orc_background.png'), url('../../image/main/human_background.png'), url('../../image/main/center_background.png'), url('../../image/main/bottom_background.png');
+  background-position: left bottom, right bottom, right top, left bottom;
+  background-size: 257px 1080px, 257px 1080px, auto, auto;
   background-repeat: no-repeat;
 }
 
@@ -25,7 +25,7 @@
   background-image: url('../../image/main/advantages_item_background_2.png');
   background-position: left top;
   background-size: 100% 100%;
-  background: radial-gradient(closest-side, rgba(41,17,56,1) 28%, rgba(7,12,21,0.75) 91%, rgba(7,12,21,0.2) 75%);
+  background: radial-gradient(closest-side, rgba(41,17,56,1) 28%, rgba(7,12,21,0.75) 91%, transparent);
 }
 
 .advantages__item:not(:nth-child(-n + 3)) {
@@ -62,12 +62,26 @@
 
 @media (max-width: 1600px) {
   .advantages {
-    background-size: 100vw 110vh;
+    background-size: 207px 900px, 207px 900px, 350px 205px, 420px 250px;
+    background-position: left bottom, right bottom, right 20%, left bottom;
   }
 
   .advantages__inner {
     padding: 0 20px;
-    
+  }
+}
+
+@media (max-width: 1380px) {
+  .advantages {
+    background-size: 177px 700px, 177px 700px, 300px 180px, 370px 220px;
+    background-position: left 75%, right 75%, right 25%, left bottom;
+  }
+}
+
+@media (max-width: 1260px) {
+  .advantages {
+    background-size: 150px 650px, 150px 650px, 300px 180px, 370px 220px;
+    background-position: left 70%, right 70%, right 27%, left bottom;
   }
 }
 
