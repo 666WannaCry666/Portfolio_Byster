@@ -12,13 +12,6 @@
   max-width: 50%;
 }
 
-.intro__title {
-  font-family: 'Buster', sans-serif;
-  font-size: 40px;
-  color: #fcbc2c;
-  letter-spacing: 4px
-}
-
 .intro__text {
   font-size: 18px;
   font-weight: 400;

@@ -63,9 +63,9 @@ p {
 }
 
 .main-top {
-  background-image: url('../../image/main/intro_background.png');
-  background-size: cover;
-  background-position: center center;
+  background-image: url('../../image/main/bottom_background.png'), url('../../image/main/center_background.png'), url('../../image/main/intro_background.png');
+  background-size: auto, auto, cover;
+  background-position: left bottom, right 15%, center center;
   background-repeat: no-repeat;
   height: 1050px;
   margin: 0 auto;
@@ -77,7 +77,13 @@ p {
   }
 
   .main-top {
-    background-size: 100vw 100vh;
+    background-size: 420px 250px, 350px 205px, cover;
+  }
+}
+
+@media (max-width:  1300px) {
+  .main-top {
+    background-size: 370px 220px, 300px 180px, cover;
   }
 }
 
