@@ -4,7 +4,7 @@ html {
 
 body {
   color: #fff;
-  background-color: #070c15;
+  background-color: #00040e;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -52,6 +52,12 @@ p {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Blueset';
+  src: url('../../fonts/BlusetNowMono-Regular.ttf');
+  font-weight: 400;
+}
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -59,7 +65,7 @@ p {
 }
 
 .review {
-  background-color: #070c15;
+  background-color: #00040e;
 }
 
 .main-top {
