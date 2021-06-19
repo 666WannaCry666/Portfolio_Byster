@@ -29,7 +29,6 @@
   transition: all .3s;
   background: #000;
   background-clip: padding-box;
-
 }
 
 .subscribe-item--first:before {
@@ -90,6 +89,7 @@
 
 .subscribe-item__name--red {
   color: #f43939;
+  text-align: center;
 }
 
 .subscribe-item__name--orange {
@@ -139,7 +139,12 @@
 
 .subscribe-item__price {
   margin-top: auto;
-  font-size: 42px;
+  font-size: 50px;
+}
+
+.subscribe-item-second__price-seven {
+  font-family: 'Blueset', sans-serif;
+  font-size: 54px;
 }
 
 .subscribe__btn {
@@ -148,7 +153,7 @@
   display: block;
   color: #ffffff;
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 16px 55px;
   border-radius: 4px;
   letter-spacing: .1px;
