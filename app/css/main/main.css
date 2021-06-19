@@ -38,7 +38,7 @@ p {
   src: url('../../fonts/Byster.ttf') format('truetype'),
   url('../../fonts/Byster.woff') format('woff'),
   url('../../fonts/Byster.woff2') format('woff2');
-  font-weight: 400;
+/*  font-weight: 400;*/
   font-style: normal;
 }
 
@@ -50,12 +50,6 @@ p {
   url('../../fonts/YandexSansDisplay-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Blueset';
-  src: url('../../fonts/BlusetNowMono-Regular.ttf');
-  font-weight: 400;
 }
 
 .container {
