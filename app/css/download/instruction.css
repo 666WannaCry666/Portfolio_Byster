@@ -1,0 +1,19 @@
+.instruction {
+	background-image: url('../../image/download/shadow_background.png');
+	background-repeat: no-repeat;
+	background-size: 100vw 100%;
+}
+
+.instruction-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.instruction__inner {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
