@@ -206,7 +206,4 @@ const newHeader = $(`
   </div>
   `);
 
-if ($('body').width == 1800) {
-  $('.header__inner-1').remove;
-}
 
