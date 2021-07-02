@@ -44,5 +44,6 @@ deploy-prod:
       LETSENCRYPT_HOST=byster.ru
       LETSENCRYPT_EMAIL=admin@byster.ru
   only:
-    - tags
-    - master
+    refs:
+      - tags
+      - master
