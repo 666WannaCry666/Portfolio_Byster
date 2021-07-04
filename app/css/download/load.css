@@ -1,6 +1,6 @@
 .load {
-	padding-top: 150px;
-	padding-bottom: 340px;
+	padding-top: 50px;
+	padding-bottom: 115px;
 	background-image: url('../../image/download/load_top_background.png'), url('../../image/download/load_center_background.png'), url('../../image/download/shadow_background.png');
 	background-size: 28vw auto, 9vw auto, 100vw 100%;
 	background-repeat: no-repeat;
@@ -12,14 +12,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 660px;
-}
-
-.load__title {
-	font-size: 88px;
-	font-weight: 500;
-  	color: #fc9f36;
-  	letter-spacing: 4px;
+	height: 400px;
 }
 
 .loading-process__image {
