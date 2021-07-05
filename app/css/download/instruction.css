@@ -2,7 +2,7 @@
 	background-image: url("../../image/download/download_human_background.png"), url('../../image/download/download_orc_background.png'), url('../../image/download/shadow_background.png');
 	background-repeat: no-repeat;
 	background-size: auto, auto, 100vw 100%;
-	background-position: right top, left top, center center;
+	background-position: right 35%, left 35%, center center;
 	padding-bottom: 100px;
 }
 
@@ -21,13 +21,10 @@
 	justify-content: space-between;
 	column-gap: 5%;
 	position: relative;
-	padding-left: 76px;
-	padding-right: 227px;
 }
 
 .instruction__inner-reverse {
 	flex-direction: row-reverse;
-	padding-right: 76px;
 }
 
 .instruction__main-title {
@@ -51,7 +48,6 @@
 	color: #fc9f36;
 	float: left;
 	display: inline-block;
-	margin-bottom: 10px;
 }
 
 .instruction__text {
@@ -61,11 +57,6 @@
 
 .instruction__image {
 	height: 225px;
-}
-
-.instruction__image-reverse {
-	margin-right: 0;
-	margin-left: 227px;
 }
 
 .instruction__inner:last-child .instruction__image {
@@ -79,14 +70,6 @@
 
 	.instruction__inner:before, .instruction__inner:first-child:after {
 		width: 1040px;
-	}
-
-	.instruction__image {
-		margin-right: auto;
-	}
-
-	.instruction__image-reverse {
-		margin-left: auto
 	}
 }
 
@@ -104,5 +87,48 @@
 	.instruction__inner {
 		flex-wrap: wrap;
 		column-gap: 5px;
+		flex-direction: column;
+	}
+
+	.instruction__text-number {
+		display: none;
+	}
+
+	.instruction__image {
+		margin: 50px 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.instruction__main-title {
+		font-size: 70px;
+	}
+}
+
+@media (max-width: 550px) {
+	.instruction__main-title {
+		font-size: 60px;
+	}
+
+	.instruction__title {
+		font-size: 40px;
+	}
+
+	.instruction__text {
+		font-size: 16px;
+	}
+
+	.instruction__image img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.instruction__main-title {
+		font-size: 38px;
+	}
+
+	.instruction__title {
+		font-size: 35px;
 	}
 }

@@ -61,3 +61,25 @@
 		background: #14111e;
 	}
 }
+
+@media (max-width: 650px) {
+	.load__btn {
+		width: 376px;
+	}
+}
+
+@media (max-width: 550px) {
+	.load__logo img {
+		width: 100%;
+	}
+
+	.load__btn {
+		width: auto;
+	}
+}
+
+@media (max-width: 450px) {
+	.load__inner {
+		height: 300px;
+	}
+}
