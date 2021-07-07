@@ -12,5 +12,3 @@ button.onclick = function() {
 
 }
 
-window.history.pushState(null, null, '/go');
-
