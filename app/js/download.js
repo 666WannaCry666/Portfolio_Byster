@@ -12,7 +12,7 @@ button.onclick = function() {
 
     let link = document.createElement("a");
     link.setAttribute('download', '');
-    link.href = '/download';
+    link.href = 'https://byster.ru/download';
     document.body.appendChild(link);
     link.click();
     link.remove();
