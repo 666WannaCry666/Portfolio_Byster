@@ -206,4 +206,5 @@ const newHeader = $(`
   </div>
   `);
 
+$("#logo_b").css("display", "none"); // Для скрытия
 
