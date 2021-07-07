@@ -16,11 +16,12 @@
 }
 
 .load__image {
-	transition: 1s;
+	transition: 0.75s;
 }
 
 .load__image:hover {
-	transform: scale(1.2);
+	-webkit-filter: drop-shadow(0 0 12px rgba(255, 156 , 37, 0.5));
+	filter: drop-shadow(0 0 10px rgba(255, 156 , 37, 0.5));
 }
 
 .loading-process__content {
