@@ -22,7 +22,7 @@
 }
 
 .load__image {
-	transition: 0.75s;
+	transition: 0.4s;
 }
 
 .load__image:hover {
