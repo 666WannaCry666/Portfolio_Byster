@@ -25,6 +25,7 @@ deploy-test:
       VIRTUAL_PATH=/
       LETSENCRYPT_HOST=web.byster.ru
       LETSENCRYPT_EMAIL=admin@byster.ru
+      RUSSIAN_BOSS=$RUSSIAN_BOSS
   only:
     - master
 
