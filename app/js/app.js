@@ -1,7 +1,7 @@
 const videoList = [
   'cNTo-vSwTss',
-  'JXbQaxOAk2E',
-  'JXbQaxOAk2E',
+  'pXzISdEzriM',
+  'woRRJaVdn0c',
   '6pf2yCMRJDk',
   'JXbQaxOAk2E'
 ];
@@ -77,7 +77,7 @@ function renderVideoContainers(videoList) {
     const videoElement = $(`
       <div>
         <div class="video__slider-item">
-          <div id=${elem} class="video-preview" style="background-image: url(//img.youtube.com/vi/${elem}/maxresdefault.jpg);" >
+          <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/hqdefault.jpg);" >
             <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
           </div>
         </div>
