@@ -22,16 +22,18 @@
           <div class="header__inner">
             <nav class="header-nav" id="headerNav">
               <button class="header-btn-menu--close" id="btnMenuClose"><img src="image/btn-close.svg" alt="" width="32" height="29"></button>
-              <a class="header-nav__link" href="https://byster.ru/">Главная</a>
-              <a class="header-nav__link" href="https://vk.com/im?sel=-161908322" target="_blank">Купить</a>
-              <a class="header-nav__link" href="https://vk.com/byster_wow" target="_blank">ВКонтакте</a>
+              <a class="header-nav__link" data-i18n="header_link-main" href="https://byster.ru/"></a>
+              <a class="header-nav__link" data-i18n="header_link-buy" href="https://vk.com/im?sel=-161908322" target="_blank"></a>
+              <a class="header-nav__link" data-i18n="header_link-VK" href="https://vk.com/byster_wow" target="_blank"></a>
               <div class="header__logo">
                 <a href="https://byster.ru/">
                   <img class="logo" src="./image/main/logo_byster.png" alt="logo">
                 </a>
               </div>
-              <a class="header-nav__link" href="#" id="reviewLink">Отзывы</a>
-              <a class="header-nav__link header-nav__link--right" href="https://byster.ru/developers">Разработчикам</a>
+              <a class="header-nav__link" data-i18n="header_link-reviews" href="#" id="reviewLink"></a>
+              <a class="header-nav__link header-nav__link--right" data-i18n="header_link-devs" href="https://byster.ru/developers"></a>
+              <a href="#" class="lang-switch" data-locale="en">English</a> |
+              <a href="#" class="lang-switch" data-locale="ru">Русский</a>
             </nav>
     
             <div class="header__logo-900px">
@@ -53,16 +55,9 @@
         <div class="container">
           <div class="intro__inner">
             <div class="intro__content">
-              <h1 class="intro__title">Byster - Авто PvE</h1>
-              <div class="intro__text">Byster - это многофункциональный бот для PvE, который имеет
-                большое количество функций. Бустер хилит, танчит, наносит урон.
-                Отслеживает ваши проки, прожимает тринькеты, профессии,
-                дефается, меняет ротацию в зависимости от приоритета и фазы босса,
-                для большей полезности в рейде. Присутствуют функции автобафа,
-                аое и соло режима, прожимок и дефов, авто-снятие оружие на леди,
-                диспел и многое другое, заинтересовался? Жми на кнопку ниже!
-              </div>
-              <a class="intro__btn" href="https://vk.com/im?sel=-161908322" target="_blank">Попробовать бесплатно</a>
+              <h1 class="intro__title" data-i18n="intro__title"></h1>
+              <div class="intro__text" data-i18n="intro__text"></div>
+              <a class="intro__btn" data-i18n="try__button" href="https://vk.com/im?sel=-161908322" target="_blank"></a>
             </div>
             <div class="intro__image">
               <img class="intro__hero" src="./image/main/hero.png" alt="">
@@ -75,7 +70,7 @@
     
       <section class="video">
         <div class="container">
-          <h2 class="title">Видео</h2>
+          <h2 class="title" data-i18n="title-video"></h2>
           <div class="video__slider" id="video"></div>
         </div>
       </section>
@@ -83,77 +78,47 @@
     
       <section class="advantages">
         <div class="container">
-          <h3 class="title">Преимущества</h3>
+          <h3 class="title" data-i18n="title-advantages"></h3>
     
           <div class="advantages__inner">
             
     
               <div class="advantages__item">
-                <h4 class="advantages__name">Анонимность</h4>
+                <h4 class="advantages__name" data-i18n="advantage__name-anonymity"></h4>
                 <img class="advantages__photo" src="./image/main/anonymous.png" alt="">
-                <p class="advantages__text">
-                  Информация о наших
-                  клиентах никогда не
-                  раскрывается третьим
-                  лицам.
-                </p>
+                <p class="advantages__text" data-i18n="advantage__name-anonymity__text"></p>
               </div>
     
               <div class="advantages__item">
-                <h4 class="advantages__name">Защита</h4>
+                <h4 class="advantages__name" data-i18n="advantage__name-protection"></h4>
                 <img class="advantages__photo" src="./image/main/defense.png" alt="">
-                <p class="advantages__text">
-                  Уникальная защита от
-                  Warden, не позволит
-                  забанить ваш аккаунт.
-                  Ноль банов за 2 года!</p>
+                <p class="advantages__text" data-i18n="advantage__name-protection__text"></p>
               </div>
     
               <div class="advantages__item">
-                <h4 class="advantages__name">Удобство</h4>
+                <h4 class="advantages__name" data-i18n="advantage__name-convenience"></h4>
                 <img class="advantages__photo" src="./image/main/comfort.png" alt="">
-                <p class="advantages__text">
-                  Вам не нужно ничего
-                  настраивать, все уже сделано
-                  за вас, все просто и легко!</p>
+                <p class="advantages__text" data-i18n="advantage__name-convenience__text"></p>
               </div>
             
     
             
               <div class="advantages__item">
-                <h4 class="advantages__name">Функционал</h4>
+                <h4 class="advantages__name" data-i18n="advantage__name-functional"></h4>
                 <img class="advantages__photo" src="./image/main/function.png" alt="">
-                <p class="advantages__text">
-                  Команда разработчиков
-                  регулярно выпускает
-                  новый, уникальный
-                  функционал, что бы вы
-                  всегда были в топе
-                  Recount'a</p>
+                <p class="advantages__text" data-i18n="advantage__name-functional__text"></p>
               </div>
     
               <div class="advantages__item">
-                <h4 class="advantages__name">Поддержка</h4>
+                <h4 class="advantages__name" data-i18n="advantage__name-support"></h4>
                 <img class="advantages__photo" src="./image/main/support.png" alt="">
-                <p class="advantages__text">
-                  Опытные специалисты
-                  поддержки всегда готовы
-                  ответить на ваши
-                  вопросы и помочь в
-                  решении возникающих
-                  проблем.</p>
+                <p class="advantages__text" data-i18n="advantage__name-support__text"></p>
               </div>
     
               <div class="advantages__item">
-                <h4 class="advantages__name">Качество</h4>
+                <h4 class="advantages__name" data-i18n="advantage__name-quality"></h4>
                 <img class="advantages__photo" src="./image/main/quality.png" alt="">
-                <p class="advantages__text">
-                  Во всех областях проекта
-                  работают
-                  профессиональны своего
-                  дела, благодаря чему вы
-                  получаете продукт
-                  лучшего качества.</p>
+                <p class="advantages__text" data-i18n="advantage__name-quality__text"></p>
               </div>
             
     
@@ -163,21 +128,21 @@
     
       <section class="subscribe">
         <div class="container">
-          <h2 class="title">Подписка</h2>
+          <h2 class="title" data-i18n="title-subscription"></h2>
     
           <div class="subscribe-inner">
             <div class="subscribe-item subscribe-item--first">
               <img src="./image/main/dd.png" alt="" class="subscribe-item__img">
               <div class="subscribe-item__name subscribe-item__name--red">DAMAGE DEALER</div>
-              <div class="subscribe-item__subname">1 Специализация</div>
-              <div class="subscribe-item__subname">1 Месяц</div>
+              <div class="subscribe-item__subname" data-i18n="subscribe-item__subname--1"></div>
+              <div class="subscribe-item__subname" data-i18n="subscribe-item__subname--2"></div>
               <div class="subscribe-item__price">199₽</div>
             </div>
             <div class="subscribe-item subscribe-item--second">
               <img src="./image/main/AIO.png" alt="" class="subscribe-item__img">
               <div class="subscribe-item__name subscribe-item__name--orange subscribe-item__name--big">ALL IN ONE</div>
-              <div class="subscribe-item__subname">Все классы</div>
-              <div class="subscribe-item__subname">1 Месяц</div>
+              <div class="subscribe-item__subname" data-i18n="subscribe-item__subname--aoe"></div>
+              <div class="subscribe-item__subname" data-i18n="subscribe-item__subname--2"></div>
               <div class="subscribe-item__price">1799₽</div>
             </div>
             <div class="subscribe-item subscribe-item--third">
@@ -185,13 +150,13 @@
               <div class="subscribe-item__name subscribe-item__name--third">
                 <span class="subscribe-item__name--blue">TANK</span>/<span class="subscribe-item__name--green">HEALER</span>
               </div>
-              <div class="subscribe-item__subname">1 Специализация</div>
-              <div class="subscribe-item__subname">1 Месяц</div>
+              <div class="subscribe-item__subname" data-i18n="subscribe-item__subname--1"></div>
+              <div class="subscribe-item__subname" data-i18n="subscribe-item__subname--2"></div>
               <div class="subscribe-item__price">299₽</div>
             </div>
           </div>
     
-          <a class="subscribe__btn" href="https://vk.com/im?sel=-161908322" target="_blank">Попробовать бесплатно</a>
+          <a class="subscribe__btn" data-i18n="try__button" href="https://vk.com/im?sel=-161908322" target="_blank"></a>
     
         </div>
       </section>
@@ -199,7 +164,7 @@
 
 <section class="review" id="reviewSection">
   <div class="container">
-    <h2 class="title">Отзывы</h2>
+    <h2 class="title" data-i18n="title-reviews"></h2>
     <div class="review-inner" id="reviewInner"></div>
   </div>
 </section>
