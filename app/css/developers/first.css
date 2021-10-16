@@ -8,6 +8,7 @@
 
 .intro-title__dev {
   color: #fff;
+  width: 55%;
   font-size: 59px;
   font-family: Roboto, sans-serif;
 }
@@ -149,6 +150,7 @@
   
   .intro-title__dev {
     font-size: 40px;
+    width: auto;
   }
   
   .dev-title-btn {

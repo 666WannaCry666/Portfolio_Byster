@@ -24,16 +24,18 @@
           <div class="header__inner">
             <nav class="header-nav" id="headerNav">
               <button class="header-btn-menu--close" id="btnMenuClose"><img src="../image/btn-close.svg" alt="" width="32" height="29"></button>
-              <a class="header-nav__link" href="https://byster.ru/">Главная</a>
-              <a class="header-nav__link" href="https://vk.com/im?sel=-161908322" target="_blank">Купить</a>
-              <a class="header-nav__link" href="https://vk.com/byster_wow" target="_blank">ВКонтакте</a>
+              <a class="header-nav__link" data-i18n="header_link-main" href="https://byster.ru/"></a>
+              <a class="header-nav__link" data-i18n="header_link-buy" href="https://vk.com/im?sel=-161908322" target="_blank"></a>
+              <a class="header-nav__link" data-i18n="header_link-VK" href="https://vk.com/byster_wow" target="_blank"></a>
               <div class="header__logo">
                 <a href="https://byster.ru/">
                   <img class="logo" src="../image/main/logo_byster.png" alt="logo">
                 </a>
               </div>
-              <a class="header-nav__link" href="#" id="reviewLink">Отзывы</a>
-              <a class="header-nav__link header-nav__link--right" href="https://byster.ru/developers">Разработчикам</a>
+              <a class="header-nav__link" data-i18n="header_link-reviews" href="#" id="reviewLink"></a>
+              <a class="header-nav__link header-nav__link--right" data-i18n="header_link-devs" href="https://byster.ru/developers"></a>
+              <a href="#" class="lang-switch" data-locale="en">English</a> |
+              <a href="#" class="lang-switch" data-locale="ru">Русский</a>
             </nav>
     
             <div class="header__logo-900px">
@@ -55,24 +57,22 @@
     <div class="container">
 
       <div class="dev-first-top">
-        <div class="intro-title__dev">Хочешь разрабатывать <br> на платформе Byster?</div>
-        <a class="intro__btn dev-title-btn" href="https://vk.com/im?sel=-161908322" target="_blank">Оставить заявку</a>
+        <div class="intro-title__dev" data-i18n="intro-title__dev--1"></div>
+        <a class="intro__btn dev-title-btn" data-i18n="submit__btn" href="https://vk.com/im?sel=-161908322" target="_blank"></a>
       </div>
 
       <div class="dev-first-bottom">
         <div class="dev-first-bottom__elem">
-          <div class="dev-first-bottom__title">Пользуйся</div>
-          <div class="dev-first-bottom__text">Доступ к мощному и удобному CoreAPI для разработки своих ротаций.</div>
+          <div class="dev-first-bottom__title" data-i18n="dev-first-bottom__title-use"></div>
+          <div class="dev-first-bottom__text" data-i18n="dev-first-bottom__text-use"></div>
         </div>
         <div class="dev-first-bottom__elem">
-          <div class="dev-first-bottom__title">Кастомизируй</div>
-          <div class="dev-first-bottom__text">Возможности. Потенциал. Фантазия. Делайте что хотите и как хотите, с нами
-            вы это можете с минимальными затратами.
-          </div>
+          <div class="dev-first-bottom__title" data-i18n="dev-first-bottom__title-customize"></div>
+          <div class="dev-first-bottom__text" data-i18n="dev-first-bottom__text-customize"></div>
         </div>
         <div class="dev-first-bottom__elem">
-          <div class="dev-first-bottom__title">Заработай</div>
-          <div class="dev-first-bottom__text">Можно писать ротации для себя, автоматизируя свой игровой процесс.</div>
+          <div class="dev-first-bottom__title" data-i18n="dev-first-bottom__title-earn"></div>
+          <div class="dev-first-bottom__text" data-i18n="dev-first-bottom__text-earn"></div>
         </div>
       </div>
 
@@ -84,13 +84,13 @@
     <div class="container">
 
       <div class="dev-what-can">
-        <div class="what-can__title">Что умеет наша платформа? Сейчас покажем:)</div>
+        <div class="what-can__title" data-i18n="what-can__title"></div>
         <div class="what-can__slider" id="what-can__slider">
 
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Protection</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Все ротации и ядро хорошо защищены от взлома. Можете  не беспокоиться о своей интеллектуальной собственности, мы её хорошо защищаем и никому не позволим ее украсть.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-protection"></div>
               <img src="../image/dev/1.png" class="slider-elem__img" alt="1">
             </div>
           </div>
@@ -98,7 +98,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Usability</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Наше API удобно в использовании. Вам не нужно писать свои функции для получения  чего-то, наверняка у нас уже есть удобная реализация для вас.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-usability"></div>
               <img src="../image/dev/2.png" class="slider-elem__img" alt="2">
             </div>
           </div>
@@ -106,7 +106,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Interaction</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Использование  предметов и способностей, как в цель, так и по площади. Взаимодействие с миром на любом уровне.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-interaction"></div>
               <img src="../image/dev/3.png" class="slider-elem__img" alt="3">
             </div>
           </div>
@@ -114,7 +114,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Predicts</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Бустер постоянно анализирует ситуацию вокруг себя и может предугадать, где будет юнит через пару секунд, сколько у него будет HP или MP и через сколько он умрёт.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-predicts"></div>
               <img src="../image/dev/4.png" class="slider-elem__img" alt="4">
             </div>
           </div>
@@ -122,7 +122,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Context</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Позволит понять как себя вести в любой ситуации. Каких юнитов бить, кому сбить каст,  можно ли прожаться и тд.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-context"></div>
               <img src="../image/dev/5.png" class="slider-elem__img" alt="5">
             </div>
           </div>
@@ -130,7 +130,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Unit</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Отдельное API позволяет получать доступ к любым данным о юните. Например, его позиция, куда он смотрит, флаги, проверка бафов.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-unit"></div>
               <img src="../image/dev/6.png" class="slider-elem__img" alt="6">
             </div>
           </div>
@@ -138,7 +138,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Spell/Item</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Отдельное  API для способностей и заклинаний позволяет получить любую информацию 1-ой командой.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-spellitem"></div>
               <img src="../image/dev/7.png" class="slider-elem__img" alt="7">
             </div>
           </div>
@@ -146,7 +146,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Menu</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Удобное встроенное меню со встроеной поддержкой локализации на многие  языки и сохранением текущего состояния.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-menu"></div>
               <img src="../image/dev/8.png" class="slider-elem__img" alt="8">
             </div>
           </div>
@@ -154,7 +154,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Movement</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Возможность передвигаться, поворачиваться как вам угодно и поиск  оптимального пути.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-movement"></div>
               <img src="../image/dev/9.png" class="slider-elem__img" alt="9">
             </div>
           </div>
@@ -162,7 +162,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">ObjectManager</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Получить доступ к любому юниту.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-objectmanager"></div>
               <img src="../image/dev/10.png" class="slider-elem__img" alt="10">
             </div>
           </div>
@@ -170,7 +170,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Optimization</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">Наше ядро хорошо оптимизировано и поэтому почти не теряет FPS при его использовании.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-optimization"></div>
               <img src="../image/dev/11.png" class="slider-elem__img" alt="11">
             </div>
           </div>
@@ -178,7 +178,7 @@
           <div class="what-can__slider-elem">
             <div class="slider-elem__title">Drawing</div>
             <div class="slider-elem__content">
-              <div class="slider-elem__text">У нас есть API для рисования чего-либо для вас. Например, это позволяет показать, куда кастует маг свой столб или куда летит пельмень профессора.</div>
+              <div class="slider-elem__text" data-i18n="slider-elem__text-drawing"></div>
               <img src="../image/dev/12.png" class="slider-elem__img" alt="12">
             </div>
           </div>
@@ -192,8 +192,8 @@
     <div class="container">
 
       <div class="dev-first-top">
-        <div class="intro-title__dev">Готовы приступить <br> к разработке?</div>
-        <a class="intro__btn dev-title-btn" href="https://vk.com/im?sel=-161908322" target="_blank">Оставить заявку</a>
+        <div class="intro-title__dev" data-i18n="intro-title__dev--2"></div>
+        <a class="intro__btn dev-title-btn" data-i18n="submit__btn" href="https://vk.com/im?sel=-161908322" target="_blank"></a>
       </div>
 
     </div>
@@ -204,6 +204,15 @@
           integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="../js/slick.min.js"></script>
   <script src="../js/app.js"></script>
+  <script src="../jquery_i18n/CLDRPluralRuleParser.js"></script>
+  <script src="../jquery_i18n/jquery.i18n.js"></script>
+  <script src="../jquery_i18n/jquery.i18n.messagestore.js"></script>
+  <script src="../jquery_i18n/jquery.i18n.fallbacks.js"></script>
+  <script src="../jquery_i18n/jquery.i18n.language.js"></script>
+  <script src="../jquery_i18n/jquery.i18n.parser.js"></script>
+  <script src="../jquery_i18n/jquery.i18n.emitter.js"></script>
+  <script src="../jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+  <script src="../jquery_i18n/dev-jquery_i18n.js"></script>
 </div>
 
 </body>

@@ -186,11 +186,11 @@ const newHeader = $(`
     <div class="header__inner">
       <nav class="header-nav" id="headerNav">
         <button class="header-btn-menu--close" id="btnMenuClose"><img src="image/btn-close.svg" alt="" width="32" height="29"></button>
-        <a class="header-nav__link" href="https://byster.ru/">Главная</a>
-        <a class="header-nav__link" href="https://vk.com/im?sel=-161908322" target="_blank">Купить</a>
-        <a class="header-nav__link" href="https://vk.com/byster_wow" target="_blank">ВКонтакте</a>
-        <a class="header-nav__link" href="#" id="reviewLink">Отзывы</a>
-        <a class="header-nav__link header-nav__link--right" href="https://byster.ru/developers">Разработчикам</a>
+        <a class="header-nav__link" data-i18n="header_link-main" href="https://byster.ru/"></a>
+        <a class="header-nav__link" data-i18n="header_link-buy" href="https://vk.com/im?sel=-161908322" target="_blank"></a>
+        <a class="header-nav__link" data-i18n="header_link-VK" href="https://vk.com/byster_wow" target="_blank"></a>
+        <a class="header-nav__link" data-i18n="header_link-reviews" href="#" id="reviewLink"></a>
+              <a class="header-nav__link header-nav__link--right" data-i18n="header_link-devs" href="https://byster.ru/developers"></a>
       </nav>
       <div class="header__logo">
         <a href="https://byster.ru/">
