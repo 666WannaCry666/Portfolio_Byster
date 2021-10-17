@@ -63,9 +63,21 @@ jQuery(document).ready(function() {
 
     update_texts();
 
+    let count = 1;
+
     $('.lang-switch').click(function(e) {
-      e.preventDefault();
-      $.i18n().locale = $(this).data('locale');
-      update_texts();
+        e.preventDefault();
+
+        if (count === 0) {
+            $.i18n().locale = "en";
+            count = 1;
+            $(this).html("RU");
+        }
+        else if (count === 1) {
+            $.i18n().locale = "ru";
+            count = 0;
+            $(this).html("ENG");
+        };
+        update_texts();
     });
   });
