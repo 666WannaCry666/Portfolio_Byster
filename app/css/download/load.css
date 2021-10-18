@@ -1,3 +1,11 @@
+.lang-switch {
+	float: right;
+	color: #fff;
+	font-size: 23px;
+	text-decoration: none;
+	text-align: center;
+}
+
 .load {
 	padding-top: 50px;
 	padding-bottom: 115px;
