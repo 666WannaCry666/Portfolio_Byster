@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
         if (count === 0) {
             $.i18n().locale = "en";
             count = 1;
-            $(this).html("RU");
+            $(this).html("RUS");
         }
         else if (count === 1) {
             $.i18n().locale = "ru";
