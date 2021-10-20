@@ -37,7 +37,7 @@ jQuery(document).ready(function() {
 
     update_texts();
 
-    let count = 1;
+    let count = 0;
 
     $('.lang-switch').click(function(e) {
         e.preventDefault();
