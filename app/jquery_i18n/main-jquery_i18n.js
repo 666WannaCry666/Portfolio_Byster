@@ -63,8 +63,21 @@ jQuery(document).ready(function() {
 
     update_texts();
 
-    let count = 0;
+    let count;
+    const lang = navigator.language;
 
+    if (lang === "ru" || lang === "be" || lang === "kk" || lang === "uk") {
+      $.i18n().locale = "ru";
+      update_texts();
+      $('.lang-switch').html("ENG");
+      count = 0;
+    }
+    else {
+      $.i18n().locale = "en";
+      update_texts();
+      $('.lang-switch').html("RUS");
+      count = 1;
+    }
     $('.lang-switch').click(function(e) {
         e.preventDefault();
 
