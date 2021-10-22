@@ -54,7 +54,7 @@ jQuery(document).ready(function() {
       }
     }
     else {
-      if (lang === "ru" || lang === "be" || lang === "kk" || lang === "uk") {
+      if (lang === "ru-RU" || lang === "ru" || lang === "be-BY" || lang === "be" || lang === "kk-KZ" || lang === "kk" || lang === "uk-UA" || lang === "uk") {
         $.i18n().locale = "ru";
         update_texts();
         $('.lang-switch').html("ENG");
