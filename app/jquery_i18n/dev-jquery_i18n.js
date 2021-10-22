@@ -2,6 +2,7 @@ jQuery(document).ready(function() {
     var update_texts = function() { $('body').i18n() };
     $.i18n().load({
         'en': {
+          "lang-switch": "RUS",
           "header_link-main": "Home",
           "header_link-buy": "Buy",
           "header_link-VK": "VK",
@@ -31,6 +32,7 @@ jQuery(document).ready(function() {
           "intro-title__dev--2": "Ready to start developing?",
           },
         'ru': {
+          "lang-switch": "ENG",
           "header_link-main": "Главная",
           "header_link-buy": "Купить",
           "header_link-VK": "ВКонтакте",
@@ -71,25 +73,25 @@ jQuery(document).ready(function() {
       update_texts();
 
       if ($.i18n().locale === "en") {
-        $('.lang-switch').html("RUS");
+        $(document).prop('title', "WoW Byster - Developers");
         count = 1;
       }
       else if ($.i18n().locale === "ru") {
-        $('.lang-switch').html("ENG");
+        $(document).prop('title', "WoW Byster - Разработчикам");
         count = 0;
       }
     }
     else {
-      if (lang === "ru" || lang === "be" || lang === "kk" || lang === "uk") {
+      if (lang === "ru-RU" || lang === "ru" || lang === "be-BY" || lang === "be" || lang === "kk-KZ" || lang === "kk" || lang === "uk-UA" || lang === "uk") {
         $.i18n().locale = "ru";
         update_texts();
-        $('.lang-switch').html("ENG");
+        $(document).prop('title', "WoW Byster - Разработчикам");
         count = 0;
       }
       else {
         $.i18n().locale = "en";
         update_texts();
-        $('.lang-switch').html("RUS");
+        $(document).prop('title', "WoW Byster - Developers");
         count = 1;
       }
     }
@@ -100,13 +102,13 @@ jQuery(document).ready(function() {
         if (count === 0) {
             $.i18n().locale = "en";
             count = 1;
-            $(this).html("RUS");
+            $(document).prop('title', "WoW Byster - Developers");
             localStorage.setItem('language', $.i18n().locale);
         }
         else if (count === 1) {
             $.i18n().locale = "ru";
             count = 0;
-            $(this).html("ENG");
+            $(document).prop('title', "WoW Byster - Разработчикам");
             localStorage.setItem('language', $.i18n().locale);
         };
 
