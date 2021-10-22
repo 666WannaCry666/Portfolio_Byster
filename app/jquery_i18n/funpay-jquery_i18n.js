@@ -2,6 +2,7 @@ jQuery(document).ready(function() {
     var update_texts = function() { $('body').i18n() };
     $.i18n().load({
         'en': {
+            "lang-switch": "RUS",
             "load__btn": "Download",
             "loading-process__content--1": "Byster is loading...",
             "loading-process__content--2": "\"Scripts. Scripts. Scripts\"",
@@ -18,6 +19,7 @@ jQuery(document).ready(function() {
             "instruction__title-video": "Video instruction"
           },
         'ru': {
+            "lang-switch": "ENG",
             "load__btn": "Скачать",
             "loading-process__content--1": "Byster загружается...",
             "loading-process__content--2": "\"Скрипты. Скрипты. Скрипты\"",
@@ -45,11 +47,11 @@ jQuery(document).ready(function() {
       update_texts();
 
       if ($.i18n().locale === "en") {
-        $('.lang-switch').html("RUS");
+        $(document).prop('title', "Download");
         count = 1;
       }
       else if ($.i18n().locale === "ru") {
-        $('.lang-switch').html("ENG");
+        $(document).prop('title', "Скачать");
         count = 0;
       }
     }
@@ -57,13 +59,13 @@ jQuery(document).ready(function() {
       if (lang === "ru-RU" || lang === "ru" || lang === "be-BY" || lang === "be" || lang === "kk-KZ" || lang === "kk" || lang === "uk-UA" || lang === "uk") {
         $.i18n().locale = "ru";
         update_texts();
-        $('.lang-switch').html("ENG");
+        $(document).prop('title', "Скачать");
         count = 0;
       }
       else {
         $.i18n().locale = "en";
         update_texts();
-        $('.lang-switch').html("RUS");
+        $(document).prop('title', "Download");
         count = 1;
       }
     }
@@ -74,13 +76,13 @@ jQuery(document).ready(function() {
         if (count === 0) {
             $.i18n().locale = "en";
             count = 1;
-            $(this).html("RUS");
+            $(document).prop('title', "Download");
             localStorage.setItem('language', $.i18n().locale);
         }
         else if (count === 1) {
             $.i18n().locale = "ru";
             count = 0;
-            $(this).html("ENG");
+            $(document).prop('title', "Скачать");
             localStorage.setItem('language', $.i18n().locale);
         };
 
