@@ -1,0 +1,37 @@
+{
+    "@metadata": {
+    "authors": [
+        "Kto-to"
+    ],
+    "last-updated": "2021-10-25",
+    "locale": "ru"
+},
+    "title": "Byster",
+    "header_link-main": "Главная",
+    "header_link-buy": "Купить",
+    "header_link-VK": "ВКонтакте",
+    "header_link-reviews": "Отзывы",
+    "header_link-devs": "Разработчикам",
+    "intro__title": "Byster - Авто PvE",
+    "intro__text": "Byster - это многофункциональный бот для PvE, который имеет большое количество функций. Бустер хилит, танчит, наносит урон. Отслеживает ваши проки, прожимает тринькеты, профессии, дефается, меняет ротацию в зависимости от приоритета и фазы босса, для большей полезности в рейде. Присутствуют функции автобафа, аое и соло режима, прожимок и дефов, авто-снятие оружие на леди, диспел и многое другое, заинтересовался? Жми на кнопку ниже!",
+    "try__button": "Попробовать бесплатно",
+    "title-video": "Видео",
+    "title-advantages": "Преимущества",
+    "advantage__name-anonymity": "Анонимность",
+    "advantage__name-anonymity__text": "Информация о наших клиентах никогда не раскрывается третьим лицам.",
+    "advantage__name-protection": "Защита",
+    "advantage__name-protection__text": "Уникальная защита от Warden, не позволит забанить ваш аккаунт. Ноль банов за 2 года!",
+    "advantage__name-convenience": "Удобство",
+    "advantage__name-convenience__text": "Вам не нужно ничего настраивать, все уже сделано за вас, все просто и легко!",
+    "advantage__name-functional": "Функционал",
+    "advantage__name-functional__text": "Команда разработчиков регулярно выпускает новый, уникальный функционал, что бы вы всегда были в топе Recount'a",
+    "advantage__name-support": "Поддержка",
+    "advantage__name-support__text": "Опытные специалисты поддержки всегда готовы ответить на ваши вопросы и помочь в решении возникающих проблем.",
+    "advantage__name-quality": "Качество",
+    "advantage__name-quality__text": "Во всех областях проекта работают профессиональны своего дела, благодаря чему вы получаете продукт лучшего качества.",
+    "title-subscription": "Подписка",
+    "subscribe-item__subname--1": "1 Специализация",
+    "subscribe-item__subname--2": "1 Месяц",
+    "subscribe-item__subname--aoe": "Все классы",
+    "title-reviews": "Отзывы"
+}

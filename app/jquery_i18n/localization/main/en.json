@@ -1,0 +1,37 @@
+{
+    "@metadata": {
+    "authors": [
+        "Kto-to"
+    ],
+    "last-updated": "2021-10-25",
+    "locale": "en"
+},
+    "title": "Byster",
+    "header_link-main": "Home",
+    "header_link-buy": "Buy",
+    "header_link-VK": "VK",
+    "header_link-reviews": "Reviews",
+    "header_link-devs": "Developers",
+    "intro__title": "Byster - Auto PvE",
+    "intro__text": "Byster is a multifunctional PvE bot that has many features. Booster heals, tanks, deals damage. Tracks your procs, runs trinkets, professions, defends, changes the rotation depending on the priority and phase of the boss, for greater usefulness in the raid. There are functions of autobuff, AoE and solo modes, projectiles and defaults, auto-removal of weapons on a lady, dispel and much more, are you interested? Click on the button below!",
+    "try__button": "Try it for free",
+    "title-video": "Videos",
+    "title-advantages": "Advantages",
+    "advantage__name-anonymity": "Anonymity",
+    "advantage__name-anonymity__text": "Information about our clients is never disclosed to third parties.",
+    "advantage__name-protection": "Protection",
+    "advantage__name-protection__text": "Unique protection from Warden, will not allow your account to be banned. Zero bans in 2 years!",
+    "advantage__name-convenience": "Convenience",
+    "advantage__name-convenience__text": "You do not need to configure anything, everything is already done for you, everything is simple and easy!",
+    "advantage__name-functional": "Functional",
+    "advantage__name-functional__text": "The development team regularly releases new, unique functionality so that you would always be at the top of Recount",
+    "advantage__name-support": "Support",
+    "advantage__name-support__text": "Experienced support specialists are always ready to answer your questions and help with problems that arise.",
+    "advantage__name-quality": "Quality",
+    "advantage__name-quality__text": "In all areas of the project, professionals work in their field, thanks to which you get a product of the best quality.",
+    "title-subscription": "Subscription",
+    "subscribe-item__subname--1": "1 Specialization",
+    "subscribe-item__subname--2": "1 Month",
+    "subscribe-item__subname--aoe": "All classes",
+    "title-reviews": "Reviews"
+}
