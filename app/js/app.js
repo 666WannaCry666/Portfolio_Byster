@@ -206,3 +206,12 @@ const newHeader = $(`
   </div>
   `);
 
+  $('.language').on('click', function(e){
+    e.preventDefault();
+
+    if ($('.lang__container').css('visibility') === "collapse")
+      $('.lang__container').css('visibility', 'visible');
+    else
+      $('.lang__container').css('visibility', 'collapse');
+  })
+
