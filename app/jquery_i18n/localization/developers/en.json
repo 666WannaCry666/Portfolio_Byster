@@ -1,0 +1,37 @@
+{
+    "@metadata": {
+    "authors": [
+        "Kto-to"
+    ],
+    "last-updated": "2021-10-25",
+    "locale": "en"
+    },
+    "lang-switch__text": "ENG",
+    "header_link-main": "Home",
+    "header_link-buy": "Buy",
+    "header_link-VK": "VK",
+    "header_link-reviews": "Reviews",
+    "header_link-devs": "Developers",
+    "intro-title__dev--1": "Do you want to develop on the Byster platform?",
+    "submit__btn": "Submit your application",
+    "dev-first-bottom__title-use": "Use",
+    "dev-first-bottom__text-use": "Access to a powerful and convenient CoreAPI for developing your rotations.",
+    "dev-first-bottom__title-customize": "Customize",
+    "dev-first-bottom__text-customize": "Possibilities. Potential. Fantasy. Do what you want and how you want, with us you can do it with minimal costs.",
+    "dev-first-bottom__title-earn": "Earn",
+    "dev-first-bottom__text-earn": "You can write rotations for yourself, automating your gameplay.",
+    "what-can__title": "What can our platform do? Let's show it now :)",
+    "slider-elem__text-protection": "All rotations and the core are well protected from hacking. You do not have to worry about your intellectual property, we protect it well and will not allow anyone to steal it.",
+    "slider-elem__text-usability": "Our API is easy to use. You don't need to write your own functions to get something, for sure we already have a convenient implementation for you.",
+    "slider-elem__text-interaction": "The use of objects and abilities, both in target and in area. Interact with the world at any level.",
+    "slider-elem__text-predicts": "The Byster constantly analyzes the situation around him and can predict where the unit will be in a couple of seconds, how much HP or MP it will have, and how long it will die.",
+    "slider-elem__text-context": "It will allow you to understand how to behave in any situation. What units to beat, who to bring down the caste, is it possible to squeeze out, etc.",
+    "slider-elem__text-unit": "A separate API allows you to access any unit data. For example, his position, where he is looking, flags, checking buffs.",
+    "slider-elem__text-spellitem": "A separate API for abilities and spells allows you to get any information with the 1st command.",
+    "slider-elem__text-menu": "Convenient built-in menu with built-in support for localization in many languages and saving the current state.",
+    "slider-elem__text-movement": "The ability to move, turn as you please and find the best path.",
+    "slider-elem__text-objectmanager": "Get access to any unit.",
+    "slider-elem__text-optimization": "Our kernel is well optimized and therefore loses almost no FPS when using it.",
+    "slider-elem__text-drawing": "We have a drawing API for you. For example, this allows you to show where the magician casts his pillar or where the professor's dumpling is flying.",
+    "intro-title__dev--2": "Ready to get started to development?"
+}
