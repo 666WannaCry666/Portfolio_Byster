@@ -6,7 +6,7 @@
     "last-updated": "2021-10-25",
     "locale": "en"
 },
-    "lang-switch": "RUS",
+    "lang-switch__text": "ENG",
     "load__btn": "Download",
     "loading-process__content--1": "Byster is loading...",
     "loading-process__content--2": "\"Scripts. Scripts. Scripts\"",

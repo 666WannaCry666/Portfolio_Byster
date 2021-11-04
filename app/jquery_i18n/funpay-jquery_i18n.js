@@ -1,64 +1,57 @@
 jQuery(document).ready(function() {
-    var update_texts = function() { $('body').i18n() };
-
-    let headerRus = "../jquery_i18n/localization/header/ru.json";
-    let headerEng = "../jquery_i18n/localization/header/renu.json"
-
-    $.i18n().load({
+  var update_texts = function() { $('body').i18n() };
+  $.i18n().load({
       'en': '../jquery_i18n/localization/funpay/en.json',
       'ru': '../jquery_i18n/localization/funpay/ru.json'
-    });
-
+  }).done( function() {
     update_texts();
 
-    let count;
     const lang = navigator.language;
-    
+
     if (localStorage.getItem('language')) {
       $.i18n().locale = localStorage.getItem('language');
       update_texts();
 
       if ($.i18n().locale === "en") {
-        $(document).prop('title', "Download");
-        count = 1;
+        $('.language__image').attr('src', '../image/flags/us.svg');
       }
       else if ($.i18n().locale === "ru") {
-        $(document).prop('title', "Скачать");
-        count = 0;
+        $('.language__image').attr('src', '../image/flags/ru.svg');
       }
     }
     else {
       if (lang === "ru-RU" || lang === "ru" || lang === "be-BY" || lang === "be" || lang === "kk-KZ" || lang === "kk" || lang === "uk-UA" || lang === "uk") {
         $.i18n().locale = "ru";
         update_texts();
-        $(document).prop('title', "Скачать");
-        count = 0;
+        $('.language__image').attr('src', '../image/flags/ru.svg');
       }
       else {
         $.i18n().locale = "en";
         update_texts();
-        $(document).prop('title', "Download");
-        count = 1;
+        $('.language__image').attr('src', '../image/flags/us.svg');
       }
     }
+  });;
 
-    $('.lang-switch').click(function(e) {
-        e.preventDefault();
+  $('.language').on('click', function(e){
+    e.preventDefault();
 
-        if (count === 0) {
-            $.i18n().locale = "en";
-            count = 1;
-            $(document).prop('title', "Download");
-            localStorage.setItem('language', $.i18n().locale);
-        }
-        else if (count === 1) {
-            $.i18n().locale = "ru";
-            count = 0;
-            $(document).prop('title', "Скачать");
-            localStorage.setItem('language', $.i18n().locale);
-        };
+    if ($('.lang__container').css('visibility') === "collapse")
+      $('.lang__container').css('visibility', 'visible');
+    else
+      $('.lang__container').css('visibility', 'collapse');
+  })
 
-        localStorage.setItem('language', $.i18n().locale);
-        update_texts();
-    });
+  $('.lang-switch').click(function(e) {
+      e.preventDefault();
+
+      $.i18n().locale = $(this).data('locale');
+
+      let languageIn = $(this).html();
+      $('.language').html(languageIn);
+
+      localStorage.setItem('language', $.i18n().locale);
+
+      update_texts();
   });
+});

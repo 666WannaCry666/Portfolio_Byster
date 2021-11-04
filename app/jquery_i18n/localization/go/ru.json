@@ -6,7 +6,7 @@
     "last-updated": "2021-10-25",
     "locale": "ru"
 },
-    "lang-switch": "ENG",
+    "lang-switch__text": "RUS",
     "load__btn": "Скачать",
     "loading-process__content--1": "Byster загружается...",
     "loading-process__content--2": "\"Скрипты. Скрипты. Скрипты\"",
