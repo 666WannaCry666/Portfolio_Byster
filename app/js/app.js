@@ -215,3 +215,14 @@ const newHeader = $(`
       $('.lang__container').css('visibility', 'collapse');
   })
 
+  $('.lang-switch').on('click', function(e){
+    e.preventDefault();
+
+    $('.lang__container').css('visibility', 'collapse');
+  })
+
+  $('.lang-switch').hover(function() {
+    $(this).css('background-color', '#303030');
+  }, function() {
+    $(this).css('background-color', '#000');
+  })
