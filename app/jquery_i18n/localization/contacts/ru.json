@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+    "authors": [
+        "Kto-to"
+    ],
+    "last-updated": "2021-10-25",
+    "locale": "ru"
+    },
+    "lang-switch__text": "RUS",
+    "header_link-main": "Главная",
+    "header_link-buy": "Купить",
+    "header_link-VK": "ВКонтакте",
+    "header_link-reviews": "Отзывы",
+    "header_link-contacts": "Контакты",
+    "header_link-devs": "Разработчикам"
+}

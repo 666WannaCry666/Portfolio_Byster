@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+    "authors": [
+        "Kto-to"
+    ],
+    "last-updated": "2021-10-25",
+    "locale": "en"
+    },
+    "lang-switch__text": "ENG",
+    "header_link-main": "Home",
+    "header_link-buy": "Buy",
+    "header_link-VK": "VK",
+    "header_link-reviews": "Reviews",
+    "header_link-contacts": "Contacts",
+    "header_link-devs": "Developers"
+}
