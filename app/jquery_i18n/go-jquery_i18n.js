@@ -33,27 +33,6 @@ jQuery(document).ready(function() {
     }
   });;
 
-  $('.language').on('click', function(e){
-    e.preventDefault();
-
-    if ($('.lang__container').css('visibility') === "collapse")
-      $('.lang__container').css('visibility', 'visible');
-    else
-      $('.lang__container').css('visibility', 'collapse');
-  })
-
-  $('.lang-switch').on('click', function(e){
-    e.preventDefault();
-
-    $('.lang__container').css('visibility', 'collapse');
-  })
-
-  $('.lang-switch').hover(function() {
-    $(this).css('background-color', '#303030');
-  }, function() {
-    $(this).css('background-color', 'transparent');
-  })
-
   $('.lang-switch').click(function(e) {
       e.preventDefault();
 
