@@ -224,5 +224,5 @@ const newHeader = $(`
   $('.lang-switch').hover(function() {
     $(this).css('background-color', '#303030');
   }, function() {
-    $(this).css('background-color', '#000');
+    $(this).css('background-color', 'transparent');
   })
