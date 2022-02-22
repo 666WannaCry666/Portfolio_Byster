@@ -46,7 +46,6 @@
 .instruction__text-number {
 	font-size: 115px;
 	color: #fc9f36;
-	float: left;
 	display: inline-block;
 }
 
@@ -57,6 +56,12 @@
 
 .instruction__image {
 	height: 225px;
+	width: auto;
+}
+
+.instruction__image img {
+	height: 225px;
+	width: auto;
 }
 
 .instruction__inner:last-child .instruction__image {
