@@ -5,7 +5,7 @@ let text = document.getElementById('load-process');
 (function() {
     let ref = localStorage.getItem("ref");
     if (ref != null)
-        button.href = button.href + `?ref=${ref}`;
+        button.href = `/download?ref=${ref}`;
 }())
 
 button.onclick = function() {
