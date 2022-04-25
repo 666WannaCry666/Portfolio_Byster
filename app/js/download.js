@@ -3,9 +3,9 @@ let button = document.getElementById('load__link');
 let text = document.getElementById('load-process');
 
 (function() {
-    let link_href = button.href;
-
-    button.href = link_href + `?ref=${localStorage.getItem("ref")}`;
+    let ref = localStorage.getItem("ref");
+    if (ref != null)
+        button.href = button.href + `?ref=${ref}`;
 }())
 
 button.onclick = function() {
