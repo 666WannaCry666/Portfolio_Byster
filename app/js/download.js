@@ -3,9 +3,8 @@ let button = document.getElementById('load__link');
 let text = document.getElementById('load-process');
 
 (function() {
-    let ref = localStorage.getItem("ref");
-    if (ref != null)
-        button.href = `/download?ref=${ref}`;
+    let ref = localStorage.getItem("ref") ?? "google";
+    button.href = `/download?ref=${ref}`;
 }())
 
 button.onclick = function() {
