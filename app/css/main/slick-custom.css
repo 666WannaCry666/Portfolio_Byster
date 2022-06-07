@@ -18,14 +18,14 @@
 .slick-prev:hover,
 .slick-prev:focus {
   background-image: url("../../image/main/arrow-left.png");
-  left: 42px;
+  left: -40px;
 }
 
 .slick-next,
 .slick-next:hover,
 .slick-next:focus {
   background-image: url("../../image/main/arrow-right.png");
-  right: 42px;
+  right: -40px;
 }
 
 .slick-prev:hover,

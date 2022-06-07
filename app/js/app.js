@@ -76,6 +76,23 @@ function renderVideoContainers(videoList) {
 
     const videoElement = $(`
       <div>
+        <div class="video__slider-container">
+          <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/hqdefault.jpg);" >
+            <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
+          </div>
+        </div>
+      </div>
+    `);
+
+    $('#selected_video').append(videoElement);
+  });
+}
+
+function renderVideoPreviews(videoList) {
+  $.each(videoList, function (index, elem) {
+
+    const videoElement = $(`
+      <div>
         <div class="video__slider-item">
           <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/hqdefault.jpg);" >
             <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
@@ -118,6 +135,7 @@ $(document).ready(function () {
   });
 
   // Рендер контейнеров для видео
+  renderVideoPreviews(videoList);
   renderVideoContainers(videoList);
 
   // Загрузка отзывов (раскомментить, когда будут нужны отзывы)
@@ -165,16 +183,27 @@ function onYouTubeIframeAPIReady() {
     objectsYT.push(objectYT)
   })
 
-  $('#video').slick({
-    dots: false,
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: false,
+    focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 700,
+        breakpoint: 1200,
         settings: {
-          arrows: false,
-          dots: true,
+          arrows: false
         }
-      },
+      }
     ]
   });
 
