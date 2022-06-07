@@ -63,6 +63,13 @@
   width: 100px;
 }
 
+.video-container__title {
+  margin: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+
 @media (min-width: 1601px) {
   .video__slider-item {
     max-width: 341px;

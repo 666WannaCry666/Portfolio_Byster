@@ -3,7 +3,8 @@ const videoList = [
   'pXzISdEzriM',
   'woRRJaVdn0c',
   '6pf2yCMRJDk',
-  'JXbQaxOAk2E'
+  'JXbQaxOAk2E',
+  'ua2KP57xclg'
 ];
 
 // Объекты YT, чтобы можно было ставить на паузу видео
@@ -71,16 +72,29 @@ function dataLoad(offset, limit) {
   })
 }
 
+function titleLoad(elem) {
+  let url = 'https://noembed.com/embed?url=https://www.youtube.com/watch?v=' + elem;
+  
+  var value= $.ajax({ 
+    url: url, 
+    async: false
+  }).responseText;
+
+  let val = JSON.parse(value);
+  return val.title;
+}
+
 function renderVideoContainers(videoList) {
   $.each(videoList, function (index, elem) {
 
     const videoElement = $(`
-      <div>
+      <div id="video-container">
         <div class="video__slider-container">
           <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/hqdefault.jpg);" >
             <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
           </div>
         </div>
+        <h1 class="video-container__title">${titleLoad(elem)}</h1>
       </div>
     `);
 
