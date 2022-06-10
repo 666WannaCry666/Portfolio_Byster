@@ -1,10 +1,14 @@
 const videoList = [
+  'ua2KP57xclg',
+  '_DPo8C0TQRg',
+  'FPfXNvYQqZ8',
+  'aHiOT5ZDT2c',
+  'bn7VCWLxdB4',
   'cNTo-vSwTss',
   'pXzISdEzriM',
   'woRRJaVdn0c',
   '6pf2yCMRJDk',
-  'JXbQaxOAk2E',
-  'ua2KP57xclg'
+  'JXbQaxOAk2E'
 ];
 
 // Объекты YT, чтобы можно было ставить на паузу видео
@@ -86,6 +90,7 @@ function titleLoad(elem) {
 
 function renderVideoContainers(videoList) {
   $.each(videoList, function (index, elem) {
+    let videoTitle = titleLoad(elem);
 
     const videoElement = $(`
       <div id="video-container">
@@ -94,7 +99,7 @@ function renderVideoContainers(videoList) {
             <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
           </div>
         </div>
-        <h1 class="video-container__title">${titleLoad(elem)}</h1>
+        <h1 class="video-container__title ${elem}" id="video-title">${videoTitle}</h1>
       </div>
     `);
 
@@ -118,6 +123,14 @@ function renderVideoPreviews(videoList) {
     $('#video').append(videoElement);
   });
 }
+
+let test = "";
+
+$('.video__slider-item').hover(function() {
+  console.log($(this).attr('class'));
+}, function() {
+  console.log('Working?');
+});
 
 $(document).ready(function () {
   const headerNav = $('#headerNav');
