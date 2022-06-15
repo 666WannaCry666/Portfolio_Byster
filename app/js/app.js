@@ -95,7 +95,7 @@ function renderVideoContainers(videoList) {
     const videoElement = $(`
       <div id="video-container">
         <div class="video__slider-container">
-          <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/hqdefault.jpg);" >
+          <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/maxresdefault.jpg);" >
             <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
           </div>
         </div>
@@ -113,7 +113,7 @@ function renderVideoPreviews(videoList) {
     const videoElement = $(`
       <div>
         <div class="video__slider-item">
-          <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/hqdefault.jpg);" >
+          <div id=${elem} class="video-preview" style="background-image: url(//i.ytimg.com/vi/${elem}/maxresdefault.jpg);" >
             <img class="video-preview__btn" src="image/main/youtube-play-icon.svg">
           </div>
         </div>
@@ -202,6 +202,7 @@ function onYouTubeIframeAPIReady() {
     // при клике на картинку добавляем объект iframe
     const objectYT = new YT.Player(this.id, {
       videoId: this.id,
+      playerVars: { 'autoplay': 1},
       events: {
         'onReady': onPlayerReady,
       }
